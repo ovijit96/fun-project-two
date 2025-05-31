@@ -1,0 +1,73 @@
+body{
+    background: linear-gradient(90deg, rgb(204, 204, 226), skyblue);
+}
+#head-section{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    background-color: skyblue;
+    padding: 20px 20px;
+    margin: 10px ;
+    align-content: center;
+   
+}
+
+header h1 span{
+    color: rgb(223, 9, 9);
+}
+header h1{
+  /* border: 2px solid gainsboro; */
+   max-width: 240px;
+    max-height: 40px;
+}
+
+ .nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown {
+  position: sticky;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  
+}
+.dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+ /* main section  */
+ 
+ .flooting-box{
+  background-color: aquamarine;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 10px;
+  transform: translateX(-100%);
+  animation: slidebounchin 10s ease-out forwards;
+ }
+
+ @keyframes slidebounchin {
+  0% {
+    transform: translateX(-150%);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
